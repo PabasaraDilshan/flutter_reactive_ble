@@ -38,6 +38,7 @@ apply plugin: "io.gitlab.arturbosch.detekt"
 apply plugin: "de.mannodermaus.android-junit5"
 
 android {
+    namespace 'com.signify.hue.flutterreactiveblelib'
     compileSdkVersion 31
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
@@ -67,7 +68,7 @@ android {
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_1_8.toString()
     }
-    namespace 'com.signify.hue.flutterreactiveblelib'
+
 }
 
 detekt {
